@@ -1,12 +1,21 @@
- body {
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 2rem;
     background-color: bisque;
+}
 
-    header {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        h1 {color: brown}
-        p {font-size: 1.5rem;}
+// Aqui va el header
+@import "header.scss";
+
+footer {
+    address {
+        p { 
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
- }
+    >p{ color: maroon}
+}

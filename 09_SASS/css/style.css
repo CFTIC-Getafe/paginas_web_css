@@ -1,17 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 2rem;
   background-color: bisque;
 }
-body header {
+
+header {
   width: 60%;
-  margin-left: auto;
+  margin-left: 30%;
   margin-right: auto;
 }
-body header h1 {
-  color: brown;
+header h1 {
+  color: maroon;
+  margin-bottom: 0.3rem;
 }
-body header p {
+header p {
+  margin-top: 0;
   font-size: 1.5rem;
+}
+header:hover {
+  background-color: #2bffb8;
+}
+header p:hover {
+  color: blue;
+}
+
+footer address p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+footer > p {
+  color: maroon;
 }
 
 /*# sourceMappingURL=css/style.css.map */
