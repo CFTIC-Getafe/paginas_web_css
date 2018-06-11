@@ -9,7 +9,7 @@
     "sass": "sass scss:css",
     "sass:watch": "nodemon -e scss -x \"sass scss:css\""
   },
-  "keywords": [],
+  "keywords": ["HTML", "CSS", "JS"],
   "author": "",
   "license": "ISC"
 }

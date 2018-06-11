@@ -10,6 +10,51 @@ body {
 // Aqui va el header
 @import "header.scss";
 
+/* Ejemplo mediante Extend
+
+section {
+    h2 {
+        color: maroon;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    p {
+        @extend h2;
+        font-size: 1.1rem;
+    }
+} */
+
+@mixin x {
+    color: maroon;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+@mixin centrar($fuente, $ancho:80%) {
+    width: $ancho;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fuente
+} 
+
+section {
+    h2 {
+        @include x;      
+    }
+    p {
+        @include x;
+        font-size: 1.1rem;
+
+        &:nth-child(2) {
+            @include centrar(1rem, 50%)
+        }
+        &:nth-child(3) { 
+            @include centrar(1.5rem)
+        }
+
+    }
+
+
+}
+
 footer {
     address {
         p { 
