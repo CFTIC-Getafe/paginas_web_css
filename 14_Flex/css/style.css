@@ -8,9 +8,9 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    align-items: flex-end;
     align-content: center;
-    height: 90vh;
+    height: 190vh;
 }
 
 div {
