@@ -18,4 +18,4 @@
 # Estilo #
 
 - RWD -> mobile-first
-- Mínimo 3 MediaQueries
+- Mínimo 3 MediaQueries (incluida la 0)
